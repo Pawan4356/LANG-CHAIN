@@ -6,7 +6,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.output_parsers import StrOutputParser
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 
 load_dotenv()
 
@@ -39,7 +39,7 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-prompt = ChatPromptTemplate.from_template(
+prompt = PromptTemplate.from_template(
     template="Answer this question: {query}\nUse this passage as reference:{retrieved_text}"
 )
 
