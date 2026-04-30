@@ -4,7 +4,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
 from pydantic import BaseModel, Field
 from typing import Literal
-from langchain.schema.runnable import RunnableBranch, RunnableLambda
+from langchain_core.runnables import RunnableBranch, RunnableLambda
 
 load_dotenv()
 
