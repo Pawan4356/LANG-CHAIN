@@ -53,3 +53,13 @@ Based solely on the provided transcript, the video segment features David Goggin
 - The app expects the required API keys and Hugging Face access to be configured in your environment.
 - If a transcript is unavailable, the indexing step cannot build the vector store for that video.
 - The current setup uses the first id in `video_ids.py`, but you can extend it to loop over multiple videos.
+
+### Potential improvements
+
+- UI based
+- Evaluation: Ragas, Langsmith,...
+- Indexing: Document ingestion, Text Splitting, Vector Store
+- Retrieval: Pre/Post/During-retrieval
+- Augmentation: PromptTemplating, Answer Grounding, Context Window Optmization
+- Generation: Answer with citation, Gaurd Railing
+- System Design: Multimodal, Agentic, Memory Based
